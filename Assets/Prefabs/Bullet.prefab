@@ -99,14 +99,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6819402895435104912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a83d4905ab36a419bf6581dd77ddf5, type: 3}
+  m_Script: {fileID: 11500000, guid: d03a6c30e4fcd4a48a0a959f3f889813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  _rb: {fileID: 6819402895435104914}
-  _damage: 0
+  Damage: 0
+  Rigidbody2D: {fileID: 6819402895435104914}
 --- !u!50 &6819402895435104914
 Rigidbody2D:
   serializedVersion: 4

@@ -72,4 +72,10 @@ public class Healing : NetworkBehaviour
         HealthChanged?.Invoke(_currentHealth, _maximumHealth);
         HealHealth?.Invoke();
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bullet"))
+            SetDamage(other.GetComponent<Bullet>().Damage, other.transform.position);
+    }
 }
